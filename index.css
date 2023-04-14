@@ -1,0 +1,155 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    
+    background-color: pink;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1,h2,h3,p {
+    color: white;
+}
+
+h1,h2,h3 {
+    font-family: monoton, cursive;
+    font-weight: 700;
+}
+
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+
+h1 {
+    font-size: 80px;
+    background-image: linear-gradient(0deg, rgba(195,34,182,0.352000175070028) 20%, rgba(253,45,208,0.7217480742296919) 94%);
+    ;
+    color:rgb(0, 0, 0); 
+    text-align: center;
+    animation: my-animation;
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+    
+}
+ img {
+    display: block;
+    margin: 0 auto;
+ }
+
+h2 {
+    font-size: 40px;
+    color: white;
+}
+
+#footerVideo{
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom:-3300px;
+    left:0;
+    right:0;
+}
+
+#fourthGrader{
+    height: 300px;
+    width: fit-content;
+    align-content: center;
+}
+
+main, section, footer {
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    color: black;
+}
+
+a:link,
+a:visited {
+    color: white;
+
+}
+
+a:hover {
+    color: rgb(255, 0, 30);
+    text-decoration: none;
+}
+
+section div {
+    background-color: rgba(235, 25, 161, 0.214);
+}
+
+section div h2 {
+    color: rgb(18, 10, 11)
+}
+ 
+section.container figure {
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+
+
+section.container div {
+width: 33%;
+margin-right: 1em;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+section.container figure img {
+    transition: transform 0.5s ease-in-out;
+}
+
+section.container figure img:hover {
+    transform: scale(1.3);
+    filter:drop-shadow(10px 10px 30px rgb(225, 220, 220, 0.3));
+
+}
+
+ section.container figure summary {
+    cursor: pointer;
+ }
+
+footer {
+    display:block;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+ 
